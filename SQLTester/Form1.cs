@@ -25,7 +25,7 @@ namespace SQLTester
             string path = Path.GetFullPath("SQLBooksDB.mdf");
             // connect to books database
             booksConnection = new
-                SqlConnection("Data Source=.\\SQLEXPRESS; AttachDBFilename=C:\\Users\\thawkins022713\\source\\repos\\SQLTester\\SQLTester\\SQLBooksDB.mdf;" +
+                SqlConnection("Data Source=.\\SQLEXPRESS; AttachDBFilename=" + path +";" +
                 "Integrated Security=True; Connect Timeout=30; User Instance=True");
             booksConnection.Open();
         }
