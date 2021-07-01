@@ -22,10 +22,11 @@ namespace SQLTester
 
         private void frmSQLTester_Load(object sender, EventArgs e)
         {
-            string path = Path.GetFullPath("SQLBooksDB.mdf");
+            string booksPath = Path.GetFullPath("SQLBooksDB.mdf");
+            string nwdbPath = Path.GetFullPath("SQLNWindDB.mdf");
             // connect to books database
             booksConnection = new
-                SqlConnection("Data Source=.\\SQLEXPRESS; AttachDBFilename=" + path +";" +
+                SqlConnection("Data Source=.\\SQLEXPRESS; AttachDBFilename=" + booksPath +";" +
                 "Integrated Security=True; Connect Timeout=30; User Instance=True");
             booksConnection.Open();
         }
