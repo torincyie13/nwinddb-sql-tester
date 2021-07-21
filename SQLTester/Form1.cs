@@ -26,7 +26,7 @@ namespace SQLTester
             string nwdbPath = Path.GetFullPath("SQLNWindDB.mdf");
             // connect to books database
             booksConnection = new
-                SqlConnection("Data Source=.\\SQLEXPRESS; AttachDBFilename=" + booksPath +";" +
+                SqlConnection("Data Source=.\\SQLEXPRESS; AttachDBFilename=" + nwdbPath +";" +
                 "Integrated Security=True; Connect Timeout=30; User Instance=True");
             booksConnection.Open();
         }
